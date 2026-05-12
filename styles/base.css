@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box ;
+    box-sizing:border-box ;
     margin: 0;
     padding: 0;
 }   
@@ -20,7 +20,7 @@ header{
 #course-title{
     display: block;
     font-family: "Playfair Display", serif ;
-    font-size: 1.8 rem;
+    font-size: 1.8rem;
     font-weight: 700;
     padding: 1.5rem;
 }
@@ -105,7 +105,7 @@ footer p{
     margin: 0.3rem;
 }
 
-#last-modified{
+#lastModified{
     font-size: 0.9rem;
     color: #facc15;
 }
