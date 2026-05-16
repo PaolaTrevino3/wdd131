@@ -38,13 +38,13 @@ h1{
     content: "X";
 }
 
-.navigation{
+.nav{
     display: flex;
     flex-direction: column;
     list-style: none;
 }
 
-.navigation a{
+.nav a{
     display: none;
     padding: 1rem;
     text-align: center;
@@ -52,7 +52,7 @@ h1{
     color: white;
 }
 
-.navigation a:hover{
+.nav a:hover{
     background-color: #486581;
 }
 
