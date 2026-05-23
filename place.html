@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Country page project fo WDD131">
+    <meta name="author" content="Paola Trevino">
+
+    <title> Mexico Country Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Mexico</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+                <img src="images/hero-small.webp" alt="Beautiful view of Mexico" width="500" height="250" >
+                </picture>
+        </section>
+
+        <section class="card data-card">
+            <h2>Data</h2>
+
+            <p><strong>Area:</strong> 1,972,550 sq km</p>
+            <p><strong>Population:</strong>129 million</p>
+            <p><strong>Capital:</strong> Mexico City</p>
+            <p><strong>Official Language:</strong> Spanish</p>
+            <p><strong>Currency:</strong> Mexican Peso (MXN)</p>
+            <p><strong>Time Zone:</strong> Central Standard Time (CST) UTC-6</p>
+            <p><strong>Calling Code:</strong> +52</p>
+            <p><strong>Internet TLD:</strong> .mx</p>
+        </section>
+
+        <section class="card weather-card">
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+            <p><strong>Temperature:</strong> <span id="temp">10</span> °C</p>  
+            <p><strong>Wind Speed:</strong> <span id="wind">5</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+        </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Paola Trevino</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
