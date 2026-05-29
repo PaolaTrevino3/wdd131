@@ -6,9 +6,9 @@ function calculateWindChill(temp, speed) {
 }
 
 if (temperature <= 10 && windSpeed > 4.8) {
-    document.getElementById("windChill").textContent = calculateWindChill(temperature, windSpeed) + " °C";
+    document.getElementById("windchill").textContent = calculateWindChill(temperature, windSpeed) + " °C";
 } else {
-    document.getElementById("windChill").textContent = "N/A";
+    document.getElementById("windchill").textContent = "N/A";
 }
 
 const year = document.getElementById('year');
