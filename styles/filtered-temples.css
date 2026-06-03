@@ -40,12 +40,12 @@ h1{
     content: "X";
 }
 
-.navigation{
+.nav{
     display: flex;
     flex-direction: column;
 }
 
-.navigation a{
+.nav a{
     display: none;
     padding: 1rem;
     text-align: center;
@@ -54,11 +54,11 @@ h1{
     font-weight: bold;
 }
 
-.navigation a:hover{
+.nav a:hover{
     background-color: #486581;
 }
 
-.navigation.open a{
+.nav.open a{
     display: block;
 }
 
