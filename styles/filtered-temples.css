@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header{
+    background-color: #243b53;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#menu{
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before{
+    content: "=";
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav a{
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    background-color: #486581;
+}
+
+.nav.open a{
+    display: block;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #243b53;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.gallery section{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.gallery h3{
+    color: #243b53;
+    margin-bottom: 0.5rem;
+}
+
+.gallery p{
+    margin: .25rem 0;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: .75rem;
+}
+
+footer{
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
