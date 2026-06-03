@@ -1,20 +1,19 @@
 @media screen and (min-width: 768px) {
-
-    #menu{
+   
+    #menu {
         display: none;
     }
 
-    .navigation{
+    .navigation {
         flex-direction: row;
         justify-content: center;
     }
 
-    .navigation a{
+    .navigation a {
         display: block;
     }
 
-    .gallery{
-        grid-template-columns: repeat(3, 1fr);  
-    
-}
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

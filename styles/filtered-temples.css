@@ -33,7 +33,7 @@ h1{
 }
 
 #menu::before{
-    content: "=";
+    content: "☰";
 }
 
 #menu.open::before{
