@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="Website planning document for a skincare project">
+        <meta name="author" content="Paola Trevino">
+        <title> Glow Guide Site Plan</title>
+
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+         <style>
+            :root{
+                --primary-color: #7b3f61;
+                --secondary-color: #f7d9e3;
+                --accent-color: #3f6651;
+                --background-color: #fffafc;
+                --text-color: #222222;
+            }
+
+            body {
+                font-family: "Roboto", sans-serif;
+                background-color: var(--background-color);
+                color: var(--text-color);
+                margin: 0;
+                line-height: 1.6;
+            }
+
+            header {
+                background-color: var(--primary-color);
+                color: white;
+                text-align: center;
+                padding: 2rem 1rem;
+            }
+
+            header img {
+                width: 90px;
+                height: auto;
+                border-radius: 50%;
+                background-color: white;
+                padding: 0.5rem;
+            }
+
+            h1, h2, h3 {
+                font-family: "Lora", serif;
+            }
+
+            main {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 1rem;
+            }
+
+            section {
+                background-color: white;
+                margin: 1.5rem 0;
+                padding: 1.5rem;
+                border-left: 6px solid var(--primary-color);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            }
+
+            .color-box {
+                display: inline-block;
+                width: 180px;
+                padding: 1rem;
+                margin: 0.5rem;
+                text-align: center;
+                border: 1px solid #ccc;
+            }
+
+            .primary {
+                background-color: var(--primary-color);
+                color: white;
+            }
+
+            .secondary {
+                background-color: var(--secondary-color);
+                color: var(--text-color);
+            }
+
+            .accent {
+                background-color: var(--accent-color);
+                color: white;
+            }
+
+            .wireframe {
+                border: 2px solid var(--accent-color);
+                padding: 1rem;
+                margin: 1rem 0;
+                background-color: #fdf1f5;
+            }
+
+            .wireframe div {
+                border: 1px dashed #555;
+                margin: o.5rem 0;
+                padding: 0.8rem;
+                text-align: center;
+                background-color: white;
+            }
+
+            .desktop-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 0.5rem;
+            }
+
+            footer {
+                text-align: center;
+                background-color: var(--primary-color);
+                color: white;
+                padding: 1rem;
+                margin-top: 2rem;
+            }
+         </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo.png" alt="Glow Guide logo">
+            <h1> Glow Guide Site Plan</h1>
+            <p> Website Planning Dociment</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Site Name</h2>
+                <h3>Glow Guide</h3>
+                <p>
+                    I choose the name glow guide because the website will help visitors learn simple and practical skin care habits. The name is easy to remember and clearly connects to healthy skin and beauty routines.
+                </p>
+
+                <p><strong>Optional domain</strong>glowguidecare.com</p>
+            </section>
+
+            <section>
+                <h2> scenarios</h2>
+                <ul>
+                    <li> why is skin care routine? Should I follow if I'm a beginner?</li>
+                    <li> how do I know which products are the best for my skin type?</li>
+                    <li> what is the difference between morning and nighttime skin care?</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> color schema</h2>
+                <p> the selected colors create a soft, clean and natural appropriate for a skin care website</p>
+
+                <div class="color-box primary">
+                    Primary<br>
+                    #7b3f61<br>
+                    Use for headings, header, footer, and accents.
+                </div>
+
+                <div class="color-box secondary">
+                    Secondary<br>
+                    #f7d9e3<Br>
+                        User for soft backgrounds in highlight areas.
+                </div>
+
+                <div class="color-box accent">
+                    Accent<br>
+                    #3f6651<br>
+                    Use for buttons, borders, and visual emphasis
+                </div>
+            </section>
+
+            <section>
+                <h2> typography</h2>
+                <p>
+                    <strong>Lora:</strong> use for headings and section titles to create an elegant and polished look.</p>
+                <p>
+                    <strong>Robote</strong> use for body text because it's green, reliable and simple for online content.
+                </p>
+            </section>
+
+            <section>
+                <h2> wireframes</h2>
+
+                <h3> mobile view</h3>
+                <div class=" wire frame">
+                <div> Header / Logo / Site Name</div>
+                <div> navigation menu</div>
+                <div> hero image</div>
+                <div> intro text</div>
+                <div> skin care tips section</div>
+                <div> product guide section</div>
+                <div>Footer</div>
+                </div>
+
+                <h3>Desktop View</h3>
+                <div class=" wireframe">
+                    <div>Header / Logo / navigation</div>
+                    <div> large hero image with welcome text</div>
+                    <div class="desktop-grid">
+                        <div> skin types</div>
+                        <div> daily routine</div>
+                        <div> product tips</div>
+                    </div>
+                    <div> call to action / learn more</div>
+                    <div> footer</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 glow guide | Paola Trevino</p>
+        </footer>
+    </body>
+</html>
