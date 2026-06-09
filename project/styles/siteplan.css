@@ -80,7 +80,7 @@
 
             .wireframe div {
                 border: 1px dashed #555;
-                margin: o.5rem 0;
+                margin: 0.5rem 0;
                 padding: 0.8rem;
                 text-align: center;
                 background-color: white;
@@ -99,9 +99,3 @@
                 padding: 1rem;
                 margin-top: 2rem;
             }
-
- @media screen and (min-width: 700px) {
-    .desktop-grid {
- grid-template-columns: 1fr 1fr 1fr;
- }
-}
