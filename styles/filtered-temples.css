@@ -1,64 +1,70 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #222;
 }
 
-header{
-    background-color: #243b53;
-    color: white;
+header {
+    background-color: #1f2937;
+    color: #ffffff;
     padding: 1rem;
     position: relative;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-#menu{
+#menu {
     font-size: 2rem;
     border: 0;
     background: none;
-    color: white;
+    color: #ffffff;
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
-#menu::before{
+#menu::before {
     content: "☰";
 }
 
-#menu.open::before{
+#menu.open::before {
     content: "X";
 }
 
-.nav{
+nav {
     display: flex;
     flex-direction: column;
 }
 
-.nav a{
+.navigation a {
     display: none;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    border-radius: 6px;
 }
 
-.nav a:hover{
-    background-color: #486581;
+.navigation a:visited {
+    color: ffffff;
 }
 
-.nav.open a{
+.navigation a:hover {
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+.navigation.open a {
     display: block;
 }
 
@@ -68,28 +74,28 @@ main{
     padding: 1rem;
 }
 
-main h2{
+main h2 {
     text-align: center;
     margin-bottom: 1rem;
-    color: #243b53;
+    color: #1f2937;
 }
 
-.gallery{
+.gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-.gallery section{
+.gallery section {
     background-color: white;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
     text-align: center;
 }
 
 .gallery h3{
-    color: #243b53;
+    color: #1f2937;
     margin-bottom: 0.5rem;
 }
 
@@ -101,11 +107,11 @@ main h2{
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-top: .75rem;
+    margin-top: 0.75rem;
 }
 
 footer{
-    background-color: #243b53;
+    background-color: #1f2937;
     color: white;
     text-align: center;
     padding: 1rem;
