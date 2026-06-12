@@ -83,7 +83,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover{
-    background-color: 1b2942;
+    background-color: #1b2942;
 }
 
 .confirmation{
@@ -97,4 +97,16 @@ input[type="submit"]:hover{
 
 footer p {
     margin: 0.3rem;
+}
+
+@media screen and(min-width: 768px){
+
+    main {
+        max-width: 800px;
+    }
+
+    form,
+    .confirmation{
+        padding: 2rem;
+    }
 }
