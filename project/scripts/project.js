@@ -24,7 +24,7 @@ const routines = [
     {
         skinType: "dry",
         title: "Dry Skin Routine",
-        image: "images/dry-skin.webp",
+        image: "images/dry.webp",
         description:
             "Focus on hydration and gentle products that help support the skin barrier.",
 
@@ -45,7 +45,7 @@ const routines = [
     {
         skinType: "oily",
         title: "Oily Skin Routine",
-        image: "images/oily-skin.webp",
+        image: "images/oily.webp",
         description:
         "The goal is to balance, not removing every drop of oil.",
 
@@ -65,7 +65,7 @@ const routines = [
     {
         skinType: "combination",
         title: "Combination Skin Routine",
-        image: "images/combination-skin.webp",
+        image: "images/combination.webp",
         description:
         "Treat dry and oily areas gently without overcomplicating your routine.",
 
@@ -83,7 +83,7 @@ const routines = [
     {
         skinType: "sensitive",
         title: "Sensitive Skin Routine",
-        image: "images/sensitive-skin.webp",
+        image: "images/sensitive.webp",
         description:
         "Choose fragrance-free products and introduce new ingredients slowly.",
 
