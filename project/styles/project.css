@@ -4,7 +4,7 @@
     --accent-color: #d98fa3;
     --mint-color: #d8ead2;
     --cream-color: #fff8f2;
-    --light-colot: #fffdfd;
+    --light-color: #fffdfd;
     --dark-color: #3d3035;
     --gray-color: #675b60;
     --card-color: #ffffff;
@@ -31,14 +31,352 @@ img {
 }
 
 header {
-    background-color: var(--light-colot);
+    background-color: var(--light-color);
     border-bottom: 4px solid var(--secondary-color);
 }
 
 .header-content {
+    position: relative;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.5rem;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+}
+
+.logo img{
+    width: 155px;
+    height: auto;
+}
+
+#menu-button {
+    position: absolute;
+    top: 40px;
+    right: 2rem;
+    display: block;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    padding: 0.45rem 0.8rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#menu-button:hover {
+    background-color: var(--accent-color);
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+    background-color: var(--light-color);
+    padding: 1rem;
+    position: absolute;
+    top: 95px;
+    right: 2rem;
+    width: 210px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    z-index: 90;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.7rem;
+    border-radius: 12px;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem 0;
+}  
+
+.hero-text {
+    background-color: linear-gradient(135deg, var(--secondary-color), var(--mint-color));
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.hero-text h1 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.hero img {
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    color: var(--dark-color);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.85rem 1.4rem;
+    margin-top: 0.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+}
+
+.welcome,
+.creacion,
+.journey,
+.saved-box,
+.page-title,
+.filter-section,
+.routine-container,
+.routine-tip,
+.featured-image,
+.wellness-intro,
+.habit-section,
+.tea-section,
+.thank-you,
+form {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.welcome img,
+.featured-image img,
+.wellness-intro img,
+.tea-section img {
+    margin-top: 1 rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.card-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--cream-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--secondary-color);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.filter-section {
+    display: grid;
+    gap: 0.75rem;
+}
+
+select,
+input,
+textarea {
+    width: 100%;
+    padding: 0.85rem;
+    border: 2px solid #e3c4ce;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid var(--mint-color);
+    border-color: var(--primary-color);
+}
+
+#routine-card {
+    background-color: var(--cream-color);
+    border: 2px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.routine-card img {
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+.routine-card ul {
+    padding-left: 1.25rem;
+}
+
+.routine-card li {
+    margin-bottom: 0.35rem;
+}
+
+.wellness-intro,
+.tea-section {
+    display: grid;
+    gap: 1rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+fieldset {
+    border: 2px solid var(--secondary-color); 
+    border-radius: var(--border-radius);
+    padding: 1rem; 
+} 
+legend { 
+    font-weight: 700; 
+    color: var(--primary-color); 
+    padding: 0 0.4rem; 
+} 
+
+label { 
+    display: block; 
+    margin-top: 1rem; 
+    font-weight: 700; 
+    color: var(--primary-color); 
+} 
+
+fieldset label { 
+    color: var(--dark-color); 
+    font-weight: 600; 
+} 
+.checkbox-label { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+} 
+
+.checkbox-label input, 
+fieldset input[type="radio"] { 
+    width: auto; 
+} 
+
+.thank-you { 
+    text-align: center; 
+    max-height: 300px; 
+} 
+
+footer { 
+    text-align: center; 
+    background-color: var(--primary-color); 
+    color: white; 
+    padding: 1.2rem; 
+    margin-top: 2rem; 
+} 
+
+footer p { 
+    color: white; 
+    margin: 0.25rem; 
+} 
+
+footer a { 
+    color: white; 
+    font-weight: 700; 
+} 
+
+@media screen and (min-width: 768px) { 
+    #menu-button { 
+        display: none; 
+    } 
     
+    nav { 
+        display: flex; 
+        position: static; 
+        flex-direction: row; 
+        width: auto; 
+        padding: 0; 
+        box-shadow: none; 
+        background-color: transparent; 
+    } 
+    
+    .hero { 
+        grid-template-columns: 1fr 1fr; 
+    } 
+    
+    .hero-text h1 { 
+        font-size: 2.6rem; 
+    } 
+    
+    .welcome { 
+        display: grid; 
+        grid-template-columns: 1.2fr 0.8fr; 
+        gap: 1.5rem; 
+        align-items: center;
+    } 
+    
+    .card-grid, 
+    #routine-cards { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+    
+    .filter-section { 
+        grid-template-columns: 1fr 2fr; 
+        align-items: center; }
+        
+    .wellness-intro, 
+    .tea-section { 
+        grid-template-columns: 1fr 1fr; 
+        align-items: center; 
+    } 
+} 
+
+@media screen and (min-width: 1000px) { 
+    .card-grid, 
+    #routine-cards { 
+        grid-template-columns: repeat(4, 1fr); 
+    } 
+    
+    .journey .card-grid, 
+    .habit-section .card-grid { 
+        grid-template-columns: repeat(4, 1fr); 
+    } 
 }
