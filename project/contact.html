@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Glow Guide and share your skin type, skincare goals, and routine preferences.">
+    <meta name="author" content="Paola Trevino">
+
+    <title>Glow Guide | Contact</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Glow Guide Logo">
+            </a>
+
+            <button id="menu-button">☰</button>
+
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="routines.html">Routines</a>
+                <a href="wellness.html">Wellness</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Let's talk skincare</h1>
+
+            <p>
+                Tell us a little about your skin type and routine goals.
+                This page saves your skin type on your browser so Glow Guide can remember it when you visit again.
+            </p>
+        </section>
+
+        <form id="contact-info" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="skin-type">Skin Type</label>
+                <select name="skin-type" id="skin-type" required>
+                    <option value="">Choose One</option>
+                    <option value="dry">Dry</option>
+                    <option value="oily">Oily</option>
+                    <option value="combination">Combination</option>
+                    <option value="sensitive">Sensitive</option>
+                    <option value="not-sure">I'm Not Sure</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>What are you looking for?</legend>
+
+                <label>
+                    <input type="radio" name="routine" value="morning" required>
+                    A simple morning routine
+                </label>
+
+                <label>
+                    <input type="radio" name="routine" value="night">
+                    A calming night routine
+                </label>
+
+                <label>
+                    <input type="radio" name="routine" value="both">
+                    Both morning and night
+                </label>
+            </fieldset>
+
+            <label for="goal">What would you like to improve or learn?</label>
+            <textarea name="goal" id="goal" rows="5" required></textarea>
+
+            <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                I would like simple skincare and wellness tips
+            </label>
+
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span>
+            Glow Guide | Paola Trevino
+        </p>
+
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>
