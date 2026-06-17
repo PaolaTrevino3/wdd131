@@ -6,7 +6,7 @@ const products = [
     {id: "jj-1969", name: "Warp Equalizer",averagerating: 5.0 }
 ];
 
-const productName = document.querySelector("#productName");
+const productName = document.querySelector("#product");
 
 products.forEach(product => {
     const option = document.createElement("option");
